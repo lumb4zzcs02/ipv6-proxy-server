@@ -527,7 +527,10 @@ function create_startup_script(){
     nscache 65536
     timeouts 10 30 60 120 360 3600 30 120
     setgid 65535
-    setuid 65535"
+    setuid 65535
+    log /var/log/3proxy.log
+    logformat "- +_L%t.%. %N.%I %E %U %C %R %O %I:%P %h %T"
+    "
 
   auth_part="auth iponly"
   if [ $use_auth -eq 0 ]; then
