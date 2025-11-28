@@ -586,7 +586,7 @@ function create_startup_script(){
   ulimit -n 600000
   ulimit -u 600000
     if [ $can_route_via_ndppd -eq 0 ]; then # Исправлено: 0 = true (NDPPD работает)
-        for ipv6_address in \$(cat ${random_ipv6_list_file}); do ip -6 addr add \$ipv6_address dev $interface_name; done;
+        for ipv6_address in \$(cat ${random_ipv6_list_file}); do ip -6 addr add \$ipv6_address/64 dev $interface_name; done;
     fi;
   ${user_home_dir}/proxyserver/3proxy/bin/3proxy ${proxyserver_config_path}
 
