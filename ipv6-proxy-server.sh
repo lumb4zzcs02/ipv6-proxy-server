@@ -519,13 +519,13 @@ function create_startup_script(){
   }
 
   immutable_config_part="daemon
-    nserver 77.88.8.8
-    nserver 77.88.8.1
-    nserver [2a02:6b8::feed:0ff]
-    nserver [2a02:6b8::feed:0fc]
+    nserver 8.8.8.8
+    nserver 8.8.4.4
+    nserver [2001:4860:4860::8888]
+    nserver [2001:4860:4860::8844]
     maxconn 200
     nscache 65536
-    timeouts 1 5 30 60 180 1800 15 60
+    timeouts 10 30 60 120 360 3600 30 120
     setgid 65535
     setuid 65535"
 
