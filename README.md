@@ -12,7 +12,7 @@ Just run:
 
 ```bash
 #sudo su
-wget https://raw.githubusercontent.com/Temporalitas/ipv6-proxy-server/master/ipv6-proxy-server.sh && chmod +x ipv6-proxy-server.sh
+wget https://raw.githubusercontent.com/lumb4zzcs02/ipv6-proxy-server/master/ipv6-proxy-server.sh && chmod +x ipv6-proxy-server.sh
 ./ipv6-proxy-server.sh -s 64 -c 100 -u username -p password -t http -r 10
 ```
 
@@ -78,3 +78,4 @@ Proxy server will stopped, all configuration files, firewalls, shedulers and so 
 ### License
 
 [MIT](https://opensource.org/licenses/MIT)
+
