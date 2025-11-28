@@ -529,7 +529,7 @@ function create_startup_script(){
     setgid 65535
     setuid 65535
     log /var/log/3proxy.log
-    logformat "- +_L%t.%. %N.%I %E %U %C %R %O %I:%P %h %T"
+    logformat '- +_L%t.%. %N.%I %E %U %C %R %O %I:%P %h %T'
     "
 
   auth_part="auth iponly"
