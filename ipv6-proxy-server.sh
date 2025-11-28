@@ -518,8 +518,11 @@ function create_startup_script(){
     echo ;
   }
 
-  immutable_config_part="daemon
-    nserver 1.1.1.1
+    immutable_config_part="daemon
+    nserver 77.88.8.8         # IPv4 Яндекс.DNS
+    nserver 77.88.8.1         # IPv4 Яндекс.DNS (резервный)
+    nserver [2a02:6b8::feed:0ff] # IPv6 Яндекс.DNS
+    nserver [2a02:6b8::feed:0fc] # IPv6 Яндекс.DNS (резервный)
     maxconn 200
     nscache 65536
     timeouts 1 5 30 60 180 1800 15 60
